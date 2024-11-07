@@ -1,4 +1,5 @@
 /* Reset and Base Styles */
+/* Reset default browser styles and set base font and color */
 * {
   margin: 0;
   padding: 0;
@@ -15,14 +16,65 @@ body {
   line-height: 1.6;
 }
 
-/* Container */
+/* Utility Classes */
+/* Reusable classes for common styles */
+
 .container {
   width: 90%;
   max-width: 1200px;
   margin: auto;
 }
 
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: opacity 0.3s ease;
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-primary {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: #e74c3c;
+}
+
 /* Navigation Bar */
+/* Styles for the navbar and its elements */
+
 .navbar {
   background: #000;
   color: #fff;
@@ -32,34 +84,31 @@ body {
   z-index: 1000;
 }
 
-.navbar .logo {
+.logo {
   font-size: 1.5em;
 }
 
-.navbar .nav-links {
+.nav-links {
   list-style: none;
   display: flex;
   gap: 1em;
 }
 
-.navbar .nav-links li a {
+.nav-links li a {
   color: #fff;
   text-decoration: none;
 }
 
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .menu-toggle {
   display: none;
-  font-size: 1.5em;
+  width: 28px;
+  height: 28px;
   cursor: pointer;
 }
 
 /* Hero Section */
+/* Styles for the hero section */
+
 .hero {
   background: url("./images/magic-kit-lq.jpg") no-repeat center center/cover;
   background-blend-mode: darken;
@@ -68,69 +117,36 @@ body {
   padding: 4em 0;
 }
 
-.hero .hero-content {
+.hero-content {
   max-width: 600px;
 }
 
-.hero h2 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
-}
-
-.hero p {
-  font-size: 1.2em;
-  margin-bottom: 1em;
-}
-
-.hero .btn {
-  background: #e74c3c;
-  color: #fff;
-  padding: 0.75em 1.5em;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: opacity 0.3s ease;
-}
-
-.hero .btn:hover {
-  opacity: 0.8;
-}
-
 /* Countdown Timer */
+/* Styles for the countdown timer */
+
 .countdown {
   background: #f4f4f4;
   padding: 2em 0;
-  text-align: center;
 }
 
-.countdown h3 {
-  margin-bottom: 1em;
-}
-
-#timer {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-}
-
-#timer div {
+.timer-box {
   background: #fff;
   padding: 1em;
   border-radius: 5px;
+  margin: 0 0.5em;
+  text-align: center;
 }
 
-#timer span {
+.timer-box span {
   display: block;
   font-size: 1.5em;
 }
 
 /* Video Section */
+/* Styles for the video section */
+
 .video {
   padding: 4em 0;
-  text-align: center;
-}
-
-.video h3 {
-  margin-bottom: 1em;
 }
 
 .video-wrapper {
@@ -150,12 +166,14 @@ body {
 }
 
 /* Features Section */
+/* Styles for the features section */
+
 .features {
   background: #f9f9f9;
   padding: 4em 0;
 }
 
-.features-grid {
+.features-container {
   display: flex;
   gap: 2em;
   flex-wrap: wrap;
@@ -173,106 +191,70 @@ body {
   margin-bottom: 0.5em;
 }
 
-.feature-item h4 {
-  margin-bottom: 0.5em;
-}
-
-.feature-item p {
-  color: #777;
-}
-
 /* Buy Now Section */
+/* Styles for the buy now section */
+
 .buy-now {
   background: #e74c3c;
   color: #fff;
-  text-align: center;
   padding: 4em 0;
 }
 
-.buy-now h3 {
-  margin-bottom: 0.5em;
-}
-
-.buy-now p {
-  margin-bottom: 1em;
-}
-
-.buy-now .btn {
-  background: #fff;
-  color: #e74c3c;
-  border-radius: 5px;
-  text-decoration: none;
-  padding: 0.75em 1.5em;
-  transition: opacity 0.3s ease;
-}
-
-.buy-now .btn:hover {
-  opacity: 0.8;
-}
-
 /* Footer */
+/* Styles for the footer */
+
 footer {
   background: #000;
   color: #fff;
   padding: 2em 0;
-  text-align: center;
 }
 
-footer .social-links {
-  margin-top: 1em;
-}
-
-footer .social-links a {
+.social-links a {
   margin: 0 0.5em;
 }
 
-footer .social-links img {
+.social-links img {
   width: 24px;
 }
 
 /* Responsive Styles */
+/* Adjustments for smaller screens */
+
 @media (max-width: 768px) {
+  /* Adjust navbar for mobile */
   .navbar .container {
     flex-wrap: wrap;
   }
 
   .menu-toggle {
     display: block;
-    width: 28px;
-    height: 28px;
   }
 
-  .navbar .nav-links {
+  .nav-links {
     display: none;
     flex-direction: column;
     width: 100%;
     background: #000;
   }
 
-  .navbar .nav-links li {
+  .nav-links li {
     width: 100%;
     text-align: center;
-    padding: 1em 0;
+    padding: 0.5em 0;
   }
 
-  .navbar .nav-links li a {
-    display: block;
-    width: 100%;
+  /* Show navigation when active */
+  .nav-links-active {
+    display: flex !important;
   }
 
-  .hero {
-    padding: 2em 0;
-  }
-
+  /* Center hero content on mobile */
   .hero-content {
     text-align: center;
   }
 
-  .features-grid {
+  /* Stack features vertically on mobile */
+  .features-container {
     flex-direction: column;
   }
-}
-
-.nav-links-active {
-  display: flex !important;
 }
