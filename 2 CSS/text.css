@@ -1,0 +1,19 @@
+* {
+  font-family: system-ui;
+}
+
+h1 {
+  font-family: sans-serif;
+  text-wrap: balance;
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+p {
+  color: rgb(19, 0, 53);
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}

@@ -1,0 +1,31 @@
+div {
+  color: white;
+}
+.parent {
+  display: flex;
+}
+
+.red {
+  background-color: rgb(255, 203, 203);
+  width: 30%;
+  margin: 20px;
+  padding: 5px;
+  text-align: center;
+  border: 5px dashed red;
+  border-radius: 20px;
+}
+
+.blue {
+  background-color: blue;
+  min-width: 70%;
+}
+
+a {
+  text-decoration: none;
+  background-color: #2b2b2b;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  display: inline-block;
+}
