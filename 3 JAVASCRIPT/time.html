@@ -1,0 +1,18 @@
+<script>
+  let today = new Date().getTime();
+  console.log("Today is: ", today);
+
+  let customDate = new Date("2024-11-25 12:00:00").getTime();
+  console.log("CUSTOM DATE: ", customDate);
+
+  let difference = customDate - today;
+  let days = difference / (1000 * 60 * 60 * 24);
+  console.log("Days until: ", days);
+
+  setInterval(sayHello, 1000);
+
+  function sayHello() {
+    let today2 = new Date();
+    console.log(today2);
+  }
+</script>

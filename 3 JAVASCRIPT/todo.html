@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", todoApp);
+
+      function todoApp() {
+        console.log("Working...");
+
+        // GET HTML ELEMENTS
+        const input = document.getElementById("input");
+        const button = document.getElementById("button");
+        const list = document.getElementById("list");
+
+        button.addEventListener("click", function () {
+          if (input.value != "") {
+            const todoItem = document.createElement("li");
+            todoItem.textContent = input.value;
+            input.value = "";
+            list.appendChild(todoItem);
+
+            todoItem.addEventListener("click", function () {
+              todoItem.remove();
+            });
+          } else {
+            console.log("Add some text...");
+          }
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="input" />
+    <button id="button">Add Todo</button>
+    <ul id="list"></ul>
+  </body>
+</html>
