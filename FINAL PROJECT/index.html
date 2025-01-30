@@ -2,15 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Magic Starter Kit - Unleash Your Inner Magician</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Link to CSS file -->
-    <link rel="stylesheet" href="styles.css" />
+    <title>Welcome to MagicStarter</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-      <div class="container flex align-center justify-between">
+      <div class="container flex navbar-container">
         <!-- Logo -->
         <h1 class="logo">MagicStarter</h1>
         <!-- Hamburger Menu Icon -->
@@ -26,7 +26,7 @@
 
     <!-- Hero Section -->
     <header class="hero" id="overview">
-      <div class="container">
+      <div class="container container-padding">
         <div class="hero-content">
           <h2>Unleash Your Inner Magician</h2>
           <p>
@@ -40,9 +40,9 @@
 
     <!-- Countdown Timer -->
     <section class="countdown">
-      <div class="container text-center">
+      <div class="container container-padding text-center">
         <h3>Special Offer Ends In:</h3>
-        <div id="timer" class="flex justify-center">
+        <div id="timer" class="flex flex-wrap justify-center">
           <div class="timer-box">
             <span id="days">00</span><span>Days</span>
           </div>
@@ -60,34 +60,35 @@
     </section>
 
     <!-- Video Trailer -->
-    <section class="video">
-      <div class="container text-center">
-        <h3>Watch the Magic Unfold</h3>
-        <div class="video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/UBmahtXnpwo"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div>
+    <section class="container container-padding text-center">
+      <h3>Watch the Magic Unfold</h3>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/UBmahtXnpwo"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
       </div>
     </section>
 
     <!-- Features Section -->
     <section class="features" id="features">
-      <div class="container">
+      <div class="container container-padding">
         <h3 class="text-center">What's Inside the Kit</h3>
-        <div class="features-container">
+
+        <div class="flex flex-wrap gap-2">
           <div class="feature-item">
             <img src="images/cards-lq.jpg" alt="Deck of Cards" />
             <h4>Deck of Cards</h4>
             <p>High-quality cards for performing classic tricks.</p>
           </div>
+
           <div class="feature-item">
             <img src="images/props-lq.jpg" alt="Magic Props" />
             <h4>Magic Props</h4>
             <p>Essential tools for every magician.</p>
           </div>
+
           <div class="feature-item">
             <img src="images/guide-lq.jpg" alt="Instructional Guide" />
             <h4>Instructional Guide</h4>
@@ -99,7 +100,7 @@
 
     <!-- Buy Now Section -->
     <section class="buy-now" id="buy-now">
-      <div class="container text-center">
+      <div class="container container-padding text-center">
         <h3>Ready to Start Your Magical Journey?</h3>
         <p>Order now and receive a special discount!</p>
         <a
@@ -113,18 +114,19 @@
     <!-- Footer -->
     <footer>
       <div class="container text-center">
-        <p>&copy; 2024 Magia&Cardistry. All rights reserved.</p>
+        <p>&copy; 2025 Magia&Cardistry. All rights reserved.</p>
         <div class="social-links">
-          <a href="#"><img src="images/facebook-icon.png" alt="Facebook" /></a>
-          <a href="#"
-            ><img src="images/instagram-icon.png" alt="Instagram"
+          <a href="https://facebook.com"
+            ><img src="images/facebook-icon.png" alt="Facebook"
           /></a>
-          <a href="#"><img src="images/twitter-icon.png" alt="Twitter" /></a>
+          <a href="https://www.instagram.com/">
+            <img src="images/instagram-icon.png" alt="Instagram"
+          /></a>
+          <a href="https://x.com/">
+            <img src="images/twitter-icon.png" alt="Twitter"
+          /></a>
         </div>
       </div>
     </footer>
-
-    <!-- Link to JavaScript file -->
-    <script src="script.js"></script>
   </body>
 </html>
